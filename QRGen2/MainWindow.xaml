@@ -1,0 +1,20 @@
+﻿<Window x:Class="QRGen2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QRGen2"
+        mc:Ignorable="d"
+        Title="Generátor QR kodu
+        " Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="12*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="textBoxInput" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="314,277,0,0" TextWrapping="Wrap" Text="Zadej Text" VerticalAlignment="Top" Width="177" Height="42" FontSize="20" Background="#FFE4DD37"/>
+        <Button x:Name="btnPotvrzeni" Content="&#xD;&#xA;Vytvořit QR kod" HorizontalAlignment="Left" Margin="314,324,0,0" VerticalAlignment="Top" Width="177" Grid.ColumnSpan="2" Height="72" Background="#FFB250D0" FontSize="16" Click="Button_Click"/>
+        <Image x:Name="obrazekQR" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="234" Margin="231,33,0,0" VerticalAlignment="Top" Width="376"/>
+
+    </Grid>
+</Window>
